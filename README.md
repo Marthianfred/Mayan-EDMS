@@ -4,90 +4,85 @@ USE THE OFFICIAL REPOSITORY INSTEAD: https://gitlab.com/mayan-edms/mayan-edms
 
 ----
 
-[![pypi][pypi]][pypi-url]
-![python][python]
-![license][license]
-[![Docker pulls](https://img.shields.io/docker/pulls/mayanedms/mayanedms.svg)](https://hub.docker.com/r/mayanedms/mayanedms/)
-[![Docker Stars](https://img.shields.io/docker/stars/mayanedms/mayanedms.svg)](https://hub.docker.com/r/mayanedms/mayanedms/)
-[![Commits][commits]][commits-url]
-[![Support][support]][support-url]
-[![Store](https://img.shields.io/badge/Online_store-black)](https://teespring.com/stores/mayan-edms)
-[![Donation](https://img.shields.io/badge/donation-PayPal-brightgreen)](https://paypal.me/MayanEDMS)
+[![Support][support-badge]][support-url]
+[![DOI][doi-badge-imgshield]][doi-url]
+[![License][license-badge]][license-url]
+[![Docker image tag][docker-image-tag-badge]][docker-image-url]
+[![Docker pulls][docker-image-pull-badge]][docker-image-url]
+[![Docker Stars][docker-image-stars-badge]][docker-image-url]
+[![GitLab][gitlab-tag-badge]][gitlab-url]
 
 
-[pypi]: https://img.shields.io/pypi/v/mayan-edms.svg
+[doi-badge-zenodo]: https://zenodo.org/badge/DOI/10.5281/zenodo.16760961.svg
+[doi-badge-imgshield]: https://img.shields.io/badge/DOI-10.5281%20%2F%20zenodo.16760961-blue.svg?style=for-the-badge&logo=doi
+[doi-url]: https://doi.org/10.5281/zenodo.16760961
+
+[docker-image-tag-badge]: https://img.shields.io/docker/v/mayanedms/mayanedms?style=for-the-badge&sort=semver&logo=docker
+
+[docker-image-url]: https://hub.docker.com/r/mayanedms/mayanedms
+
+[docker-image-pull-badge]: https://img.shields.io/docker/pulls/mayanedms/mayanedms.svg?style=for-the-badge&logo=docker
+
+[docker-image-stars-badge]: https://img.shields.io/docker/stars/mayanedms/mayanedms.svg?style=for-the-badge&logo=docker
+
+[gitlab-pipelines-url]: https://gitlab.com/mayan-edms/mayan-edms/pipelines
+[gitlab-tag-badge]:https://img.shields.io/gitlab/v/tag/mayan-edms%2Fmayan-edms?style=for-the-badge&sort=semver&logo=gitlab&label=GitLab
+[gitlab-url]: https://gitlab.com/mayan-edms/mayan-edms
+
+[pypi-badge]: https://img.shields.io/pypi/v/mayan-edms?style=for-the-badge&logo=python&label=PyPI
 [pypi-url]: https://pypi.org/project/mayan-edms/
 
-[builds]: https://gitlab.com/mayan-edms/mayan-edms/badges/master/build.svg
-[builds-url]: https://gitlab.com/mayan-edms/mayan-edms/pipelines
-
-[python]: https://img.shields.io/pypi/pyversions/mayan-edms.svg
-[python-url]: https://img.shields.io/pypi/l/mayan-edms.svg?style=flat
-
-[license]: https://img.shields.io/pypi/l/mayan-edms.svg?style=flat
+[license-badge]: https://img.shields.io/pypi/l/mayan-edms.svg?style=for-the-badge&logo=opensourceinitiative&logoColor=white&color=008800
 [license-url]: https://gitlab.com/mayan-edms/mayan-edms/blob/master/LICENSE
 
-[commits]:  https://img.shields.io/github/commit-activity/y/mayan-edms/mayan-edms.svg
-[commits-url]: https://gitlab.com/mayan-edms/mayan-edms/
-
-[support]: https://img.shields.io/badge/Get_support-brightgreen
+[support-badge]: https://img.shields.io/badge/Get_support-brightgreen?style=for-the-badge
 [support-url]: https://www.mayan-edms.com/support/
 
-<div align="center">
-  <a href="http://www.mayan-edms.com">
-    <img width="200" heigth="200" src="https://gitlab.com/mayan-edms/mayan-edms/raw/master/docs/_static/mayan_logo.png">
-  </a>
-  <br>
-  <br>
-  <p>
-    Mayan EDMS is a document management system. Its main purpose is to store,
-    introspect, and categorize files, with a strong emphasis on preserving the
-    contextual and business information of documents. It can also OCR, preview,
-    label, sign, send, and receive thoses files. Other features of interest
-    are its workflow system, role based access control, and REST API.
-  <p>
 
-<p align="center">
-    <img width="400" src="https://gitlab.com/mayan-edms/mayan-edms/raw/master/docs/_static/overview.gif">
-</p>
+<a href="http://www.mayan-edms.com">
+    <img align="center" height="200" width="200" src="https://gitlab.com/mayan-edms/mayan-edms/raw/master/docs/_static/mayan_logo_bw.png">
+</a>
 
-</div>
+<p>
+    The most advanced, scalable, and mature open source document management system.
+<p>
 
-<h2 align="center">Book</h2>
+<img align="center" src="https://gitlab.com/mayan-edms/mayan-edms/raw/master/docs/_static/overview.gif" width="400">
 
-The final version of the book "Exploring Mayan EDMS" available now!
+# Getting started
 
-<p align="center">
-    <a href="https://sellfy.com/p/um2fkx/">
-        <img width="400" src="https://d12swbtw719y4s.cloudfront.net/images/v6RpxW40/aP0qKLjkPiAuXZhYuB45/wDAULAzFyx.jpeg?w=548">
-    </a>
-</p>
+It is very easy to get started with Mayan EDMS, just deploy the official
+Docker Compose file.
 
-The link is https://sellfy.com/p/um2fkx/
+    curl https://gitlab.com/mayan-edms/mayan-edms/-/raw/master/docker/docker-compose.yml -O
+    curl https://gitlab.com/mayan-edms/mayan-edms/-/raw/master/docker/.env -O
+    docker compose up --detach
 
-<h2 align="center">Installation</h2>
+The complete documentation is available at: https://docs.mayan-edms.com/parts/installation.html
 
-The easiest way to use Mayan EDMS is by using the official
-[Docker](https://www.docker.com/) image. Make sure Docker is properly installed
-and working before attempting to install Mayan EDMS.
+# Get the books
 
-For the complete set of installation instructions visit the Mayan EDMS documentation
-at: https://docs.mayan-edms.com/parts/installation.html
+<a href="https://a.co/d/cqda9uu">
+    <img align="center" src="https://m.media-amazon.com/images/I/61PAvrh303L._SL1293_.jpg" width="150">
+</a>
+<a href="https://a.co/d/9RMXyfn">
+    <img align="center" src="https://m.media-amazon.com/images/I/61g21N5oQCL._SL1491_.jpg" width="150">
+</a>
 
-<h2 align="center">Hardware requirements</h2>
+# Tutorials
 
-- 2 Gigabytes of RAM (1 Gigabyte if OCR is turned off).
-- Multiple core CPU (64 bit, faster than 1 GHz recommended).
+For more in-depth articles, tutorials, and troubleshooting available in the Knowledge Base.
 
-<h2 align="center">Important links</h2>
 
+<a href="https://forum.mayan-edms.com/s/prod_Ogq3lYaoROC02Q">
+    <img align="center" src="https://docs.mayan-edms.com/_static/knowledge-base.jpg" width="400">
+</a>
+
+Click the image or visit: https://forum.mayan-edms.com/s/prod_Ogq3lYaoROC02Q
+
+# Important links
 
 - [Homepage](http://www.mayan-edms.com)
 - [Documentation](https://docs.mayan-edms.com)
-- [Contributing](https://gitlab.com/mayan-edms/mayan-edms/blob/master/CONTRIBUTING.md)
 - [Forum](https://forum.mayan-edms.com/)
 - [Source code, issues, bugs](https://gitlab.com/mayan-edms/mayan-edms)
-- [Plug-ins, other related projects](https://gitlab.com/mayan-edms/)
-- [Translations](https://www.transifex.com/rosarior/mayan-edms/)
-- [Videos](https://www.youtube.com/channel/UCJOOXHP1MJ9lVA7d8ZTlHPw)
-
