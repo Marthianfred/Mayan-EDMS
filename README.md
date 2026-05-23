@@ -1,3 +1,9 @@
+IMPORTANT! THIS IS MIRROR IS NO LONGER MAINTAINED AND IS VERY OUTDATED.
+
+USE THE OFFICIAL REPOSITORY INSTEAD: https://gitlab.com/mayan-edms/mayan-edms
+
+----
+
 [![pypi][pypi]][pypi-url]
 ![python][python]
 ![license][license]
