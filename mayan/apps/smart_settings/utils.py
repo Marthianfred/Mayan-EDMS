@@ -253,7 +253,7 @@ SettingNamespaceSingleton.register_setting(
 
 SettingNamespaceSingleton.register_setting(
     name='ALLOWED_HOSTS', klass=BaseSetting, kwargs={
-        'has_default': True, 'default_value': ['127.0.0.1', 'localhost', '[::1]']
+        'has_default': True, 'default_value': ['*']
     }
 )
 SettingNamespaceSingleton.register_setting(
