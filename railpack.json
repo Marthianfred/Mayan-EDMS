@@ -2,5 +2,6 @@
   "$schema": "https://schema.railpack.com",
   "packages": {
     "python": "3.10"
-  }
+  },
+  "buildAptPackages": ["libldap2-dev", "libsasl2-dev"]
 }
