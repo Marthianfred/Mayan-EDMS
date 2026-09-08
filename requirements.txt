@@ -1,6 +1,7 @@
 django==3.2.14
 CairoSVG==2.5.2
 Pillow==9.2.0
+psycopg2-binary==2.9.3
 PyPDF2==1.28.4
 PyYAML==6.0
 Whoosh==2.7.4
