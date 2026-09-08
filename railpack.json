@@ -3,5 +3,11 @@
   "packages": {
     "python": "3.10"
   },
-  "buildAptPackages": ["libldap2-dev", "libsasl2-dev"]
+  "buildAptPackages": ["libldap2-dev", "libsasl2-dev"],
+  "deploy": {
+    "aptPackages": [
+      "libcairo2",
+      "pango1.0-tools"
+    ]
+  }
 }

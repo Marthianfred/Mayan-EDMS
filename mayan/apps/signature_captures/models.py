@@ -2,7 +2,6 @@ import hashlib
 import io
 import logging
 
-import cairosvg
 from furl import furl
 from PIL import Image
 
@@ -170,6 +169,8 @@ class SignatureCapture(ExtraDataModelMixin, models.Model):
         return hashlib.sha256(force_bytes(self.svg)).hexdigest()
 
     def get_image(self):
+        import cairosvg
+
         stream = io.BytesIO()
         cairosvg.svg2png(url=self.svg, write_to=stream)
         image = Image.open(stream)
