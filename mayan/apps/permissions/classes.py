@@ -64,7 +64,7 @@ class Permission(AppsModuleLoaderMixin):
     @classmethod
     def check_user_permissions(cls, permissions, user):
         for permission in permissions:
-            if permission.stored_permission.user_has_this(user=user):
+            if permission.stored_permission and permission.stored_permission.user_has_this(user=user):
                 return True
 
         logger.debug(

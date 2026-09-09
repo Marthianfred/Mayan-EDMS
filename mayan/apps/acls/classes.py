@@ -92,7 +92,7 @@ class ModelPermission:
             permissions.extend(class_permissions)
 
         pks = [
-            permission.stored_permission.pk for permission in set(permissions)
+            permission.stored_permission.pk for permission in set(permissions) if permission.stored_permission
         ]
         return StoredPermission.objects.filter(pk__in=pks)
 
