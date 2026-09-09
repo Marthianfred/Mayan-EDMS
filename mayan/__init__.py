@@ -1,4 +1,4 @@
-__title__ = 'Mayan EDMS'
+__title__ = 'Fibex EDMS'
 __version__ = '4.3.1'
 __build__ = 0x040301
 __build_string__ = 'v4.3.1_Sun Aug 21 03:19:32 2022 -0400'
