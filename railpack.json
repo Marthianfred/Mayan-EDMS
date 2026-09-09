@@ -9,6 +9,6 @@
       "libcairo2",
       "pango1.0-tools"
     ],
-    "startCommand": "python manage.py initial_setup --force ; python manage.py performupgrade ; python manage.py dependencies_install ; python manage.py appearance_prepare_static ; gunicorn mayan.wsgi:application --bind 0.0.0.0:$PORT"
+    "startCommand": "python manage.py initialsetup --force ; python manage.py performupgrade ; python manage.py autoadmin_create ; python manage.py dependencies_install ; python manage.py appearance_prepare_static --noinput ; gunicorn mayan.wsgi:application --bind 0.0.0.0:$PORT"
   }
 }
