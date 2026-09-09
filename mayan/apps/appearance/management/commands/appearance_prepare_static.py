@@ -13,6 +13,7 @@ class Command(DjangoCommand):
         matches anything after "/<app name>/static/"
         """
         self.verbosity = options['verbosity']
+        self.interactive = False
         options['interactive'] = False
 
         for key, data in apps.app_configs.items():
