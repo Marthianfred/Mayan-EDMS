@@ -9,6 +9,6 @@
       "libcairo2",
       "pango1.0-tools"
     ],
-    "startCommand": "python manage.py perform_upgrade && gunicorn mayan.wsgi:application --bind 0.0.0.0:$PORT"
+    "startCommand": "python manage.py performupgrade && gunicorn mayan.wsgi:application --bind 0.0.0.0:$PORT"
   }
 }
