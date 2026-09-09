@@ -19,7 +19,7 @@ class AutoAdminSingletonManager(models.Manager):
             password = setting_password.value
 
         try:
-            UserModel.objects.get(
+            account = UserModel.objects.get(
                 **{UserModel.USERNAME_FIELD: setting_username.value}
             )
         except UserModel.DoesNotExist:
@@ -39,17 +39,11 @@ class AutoAdminSingletonManager(models.Manager):
             account = UserModel.objects.get(
                 **{UserModel.USERNAME_FIELD: setting_username.value}
             )
-            account.set_password(raw_password=password)
-            account.save()
-            # Store the auto admin password properties to display the
-            # first login message
-            auto_admin_properties, created = self.get_or_create()  # NOQA
-            auto_admin_properties.account = account
-            auto_admin_properties.password = password
-            auto_admin_properties.password_hash = account.password
-            auto_admin_properties.save()
-        else:
-            logger.error(
-                'Super admin user already exists. -- login: %s',
-                setting_username.value
-            )
+
+        account.set_password(raw_password=password)
+        account.save()
+        auto_admin_properties, created = self.get_or_create()
+        auto_admin_properties.account = account
+        auto_admin_properties.password = password
+        auto_admin_properties.password_hash = account.password
+        auto_admin_properties.save()
