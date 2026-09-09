@@ -234,7 +234,7 @@ class UserMailer(BackendModelMixin, models.Model):
         """
         try:
             self.send(
-                subject=_('Test email from Mayan EDMS'), to=to, _user=_user
+                subject=_('Test email from Fibex EDMS'), to=to, _user=_user
             )
         except Exception as exception:
             self.error_log.create(

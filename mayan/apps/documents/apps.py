@@ -300,7 +300,7 @@ class DocumentsApp(MayanAppConfig):
             label=_('Create a document type'),
             description=_(
                 'Every uploaded document must be assigned a document type, '
-                'it is the basic way Mayan EDMS categorizes documents.'
+                'it is the basic way Fibex EDMS categorizes documents.'
             ), condition=lambda: not DocumentType.objects.exists(),
             view='documents:document_type_list'
         )
