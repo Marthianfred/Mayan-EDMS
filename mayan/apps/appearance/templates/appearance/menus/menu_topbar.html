@@ -13,10 +13,20 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="{% url home_view %}">{% smart_setting 'COMMON_PROJECT_TITLE' %}</a>
+                <a class="navbar-brand" href="{% url home_view %}">
+                    <span class="navbar-brand-icon"><i class="fas fa-layer-group"></i></span>
+                    <span class="navbar-brand-title">Fibex EDMS</span>
+                </a>
             </div>
 
             <div id="navbar" class="navbar-collapse collapse">
+                <div class="navbar-left hidden-xs hidden-sm">
+                    <div class="topbar-search-trigger">
+                        <i class="fas fa-search"></i>
+                        <span>{% trans 'Buscar en el sistema...' %}</span>
+                        <kbd class="topbar-kbd">⌘K</kbd>
+                    </div>
+                </div>
                 <ul class="nav navbar-nav navbar-right">
                     {% navigation_resolve_menu name='topbar' as topbar_menus_results %}
                     {% for tobpar_menu_result in topbar_menus_results %}

@@ -886,3 +886,166 @@ body {
     color: #3C50E0 !important;
     font-weight: 500 !important;
 }
+
+.sidebar-brand-header {
+    padding: 20px 20px 16px 20px !important;
+    border-bottom: 1px solid #2E3A47 !important;
+    margin-bottom: 10px !important;
+}
+
+.sidebar-brand-link {
+    display: flex !important;
+    align-items: center !important;
+    text-decoration: none !important;
+    color: #FFFFFF !important;
+}
+
+.sidebar-brand-link:hover, .sidebar-brand-link:focus {
+    text-decoration: none !important;
+    color: #FFFFFF !important;
+}
+
+.sidebar-brand-logo-icon {
+    width: 36px !important;
+    height: 36px !important;
+    background-color: #3C50E0 !important;
+    color: #FFFFFF !important;
+    border-radius: 8px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 16px !important;
+    margin-right: 12px !important;
+    box-shadow: 0 4px 10px rgba(60, 80, 224, 0.3) !important;
+}
+
+.sidebar-brand-title {
+    font-size: 18px !important;
+    font-weight: 700 !important;
+    color: #FFFFFF !important;
+    letter-spacing: -0.02em !important;
+}
+
+.sidebar-brand-badge {
+    background: rgba(60, 80, 224, 0.3) !important;
+    color: #60A5FA !important;
+    font-size: 11px !important;
+    font-weight: 600 !important;
+    padding: 2px 6px !important;
+    border-radius: 4px !important;
+    margin-left: 4px !important;
+}
+
+.navbar-brand-icon {
+    color: #3C50E0 !important;
+    margin-right: 8px !important;
+    font-size: 18px !important;
+}
+
+.topbar-search-trigger {
+    background-color: #F1F5F9 !important;
+    border: 1px solid #E2E8F0 !important;
+    border-radius: 8px !important;
+    padding: 7px 14px !important;
+    margin-top: 9px !important;
+    margin-left: 20px !important;
+    color: #64748B !important;
+    font-size: 13px !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    cursor: pointer !important;
+    transition: all 0.2s ease !important;
+}
+
+.topbar-search-trigger:hover {
+    border-color: #CBD5E1 !important;
+    background-color: #E2E8F0 !important;
+}
+
+.topbar-kbd {
+    background-color: #FFFFFF !important;
+    border: 1px solid #CBD5E1 !important;
+    border-radius: 4px !important;
+    padding: 1px 5px !important;
+    font-size: 11px !important;
+    color: #94A3B8 !important;
+    font-weight: 500 !important;
+    margin-left: 10px !important;
+}
+
+.label, .badge {
+    border-radius: 6px !important;
+    font-weight: 600 !important;
+    font-size: 11px !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.04em !important;
+    padding: 4px 10px !important;
+}
+
+.label-success, .badge-success {
+    background-color: #DCFCE7 !important;
+    color: #15803D !important;
+}
+
+.label-warning, .badge-warning {
+    background-color: #FEF3C7 !important;
+    color: #B45309 !important;
+}
+
+.label-danger, .badge-danger {
+    background-color: #FEE2E2 !important;
+    color: #B91C1C !important;
+}
+
+.label-info, .badge-info, .label-primary, .badge-primary {
+    background-color: #E0E7FF !important;
+    color: #3730A3 !important;
+}
+
+.label-default, .badge-default {
+    background-color: #F1F5F9 !important;
+    color: #475569 !important;
+}
+
+.dropdown-menu {
+    border-radius: 12px !important;
+    border: 1px solid #E2E8F0 !important;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.05) !important;
+    padding: 8px !important;
+}
+
+.dropdown-menu > li > a {
+    border-radius: 6px !important;
+    padding: 8px 12px !important;
+    font-size: 14px !important;
+    color: #334155 !important;
+    font-weight: 500 !important;
+
+}
+
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+    background-color: #F1F5F9 !important;
+    color: #3C50E0 !important;
+}
+
+#appearance-main-viewport h1, #appearance-main-viewport .h1 {
+    font-size: 24px !important;
+    font-weight: 700 !important;
+    color: #1C2434 !important;
+    letter-spacing: -0.02em !important;
+    margin-bottom: 8px !important;
+}
+
+#appearance-main-viewport h2, #appearance-main-viewport .h2 {
+    font-size: 20px !important;
+    font-weight: 600 !important;
+    color: #1C2434 !important;
+}
+
+.well {
+    background-color: #FFFFFF !important;
+    border: 1px solid #E2E8F0 !important;
+    border-radius: 12px !important;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05) !important;
+}
